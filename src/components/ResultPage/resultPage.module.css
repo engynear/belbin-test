@@ -1,0 +1,261 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    overflow-y: visible;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main h1 {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 700;
+    font-size: 50px;
+}
+.main h2 {
+    font-weight: 700;
+    font-size: 54px;
+    margin-top: 40px;
+}
+.main h3 {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.topStripe {
+    position: absolute;
+    width: 1204px;
+    height: 872px;
+    left: 0;
+    top: 0;
+}
+
+.rightStripe {
+    position: absolute;
+    width: 1204px;
+    height: 872.01px;
+    top: 1000px;
+    right: -50px;
+}
+
+.shareButton {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    justify-content: baseline;
+}
+
+.shareButton button {
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    max-width: 400px;
+    border-radius: 8px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #B3B3B3;
+    font-weight: 700;
+    font-size: 24px !important;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.buttonIcon {
+    color: #B3B3B3;
+    margin-top: 10px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.shareButton button:disabled { background: #867e7e; color: #ececec; }
+
+@media screen and (max-width: 960px) {
+    .topStripe {
+        width: 83%;
+        height: auto;
+    }
+    .rightStripe {
+        width: 60%;
+        right: 0px;
+        height: auto;
+    }
+
+    .shareButton button {
+        width: 50%;
+        margin-top: 10px;
+        font-size: 14px !important;
+    }
+
+    .buttonIcon {
+        margin-top: 10px;
+        margin-left: 70px;
+        width: 35px;
+    }
+
+    .main h1 {
+        font-size: 9vw;
+    }
+    .main h2 {
+        font-size: 6vw;
+        margin-top: 30px;
+    }
+    .main h3 {
+        font-size: 40px;
+    }
+    .main h4 {
+        font-size: 5vw;
+        width: 90%;
+    }
+}
+
+.table {
+    width: 50%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    min-width: 625px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px calc(10px + 1vw);
+}
+
+.firstLi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bodyLi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #000;
+}
+.firstColumn {
+    min-width: 268px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    border-right: 1px solid #000;
+    padding: 20px 0;
+    font-size: 24px;
+}
+.secondColumn {
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    border-right: 1px solid #000;
+    padding: 20px 0;
+    font-size: 24px;
+}
+.thirdColumn {
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    padding: 20px 0;
+    font-size: 24px;
+}
+.bottomPar {
+    font-size: 28px;
+    line-height: 1.6;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 960px) {
+    .table {
+        width: 90%;
+        min-width: 350px;
+    }
+    .firstColumn, .secondColumn, .thirdColumn {
+        font-size: 12px;
+        padding: 13px 0;
+        min-width: 0;
+    }
+    .bottomPar {
+        font-size: 18px;
+        margin-top: 40px;
+        padding: 0 16px;
+    }
+}
+.table ul {
+    width: 100%;
+}
+.table ul li {
+    width: 100%;
+}
+.table_first {
+    width: 100%;
+}
+
+
+
+.belbinLabel {
+    display: block;
+    margin-top: 160px;
+    margin-bottom: 50px;
+    padding-bottom: 200px;
+    height: 150px;
+}
+
+.belbinLabel img {   
+    height: 80px;
+}
+
+/*
+.belbinLabel {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    transform: rotate(-6deg);
+    background: url(../../assets/ResultPage/belbinLabel.svg) bottom center;
+}
+
+*/
+
+@media screen and (max-width: 960px) {
+    .belbinLabel {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .belbinLabel img {   
+        height: 40px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .belbinLabel {
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .belbinLabel img {   
+        height: 30px;
+    }
+
+    .shareButton button {
+        width: 80% !important;
+        margin-top: 5px;
+        font-size: 18px !important;
+    }
+
+    .buttonIcon {
+        margin-right: 10px;
+        margin-top: 0px;
+        width: 28px;
+    }
+}

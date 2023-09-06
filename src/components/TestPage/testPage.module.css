@@ -1,0 +1,116 @@
+.Main {
+    padding-top: 80px;
+    padding: 0.5em 1em 2.1em;
+}
+
+.PageName {
+/* 
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-weight: 500 !important;
+
+*/
+
+    margin: 40px 0 24px !important;
+    color:#BABABA;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    line-height: 48px !important;
+    text-align: center !important;
+}
+.BoldLabel {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.BoldLabel p {
+    font-family: "Inter" !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.Question > * {
+    margin: 0;
+    font-size: 20px !important;
+}
+.testBelbLabel{
+    text-transform: uppercase;
+    font-family: "Benzin ExtraBold", sans-serif !important;
+    text-align: center;
+}
+
+h1.testBelbLabel {
+    text-align: left;
+    font-size: 80px;
+    line-height: 94px;
+}
+h3.testBelbLabel {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+section.instructionsText {
+    margin-top: 32px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.instructionsText p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.instructionsStrongText {
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 960px) {
+    .PageName {
+        font-size: calc(16px + 0.2vw) !important;
+    }
+    .BoldLabel {
+        font-size: calc(18px + 0.1vw) !important;
+    }
+
+    .BoldLabel p {
+        font-size: calc(18px + 0.1vw) !important;
+        line-height: calc(24px + 0.1vw) !important;
+    }
+
+    .Question {
+        font-size: 16px !important;
+    }
+    .testBelbLabel {
+        font-size: 20px !important;
+    }
+    .instructionsText {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .instructionsText p {
+        font-size: 18px !important;
+    }
+
+    h1.testBelbLabel {
+        font-size: 30px !important;
+        line-height: 1.2;
+    }
+    h3.testBelbLabel {
+        font-size: 12px !important;
+    }
+}
